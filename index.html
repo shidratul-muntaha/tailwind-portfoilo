@@ -1,0 +1,821 @@
+
+<html lang="en" data-theme="cupcake" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- daisyUi  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FlowBite  -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"  rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <!-- aos  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- EmailJS CDN  -->
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+            publicKey: "XbCPIns32vYTh80mS",
+        });
+        })();
+    </script>
+    <!-- title  -->
+    <title>Shidratul Muntaha</title>
+    <!-- style  -->
+    <style>
+        
+      /* Hide scrollbar for Chrome, Safari and Opera */
+      ::-webkit-scrollbar {
+          display: none;
+      }
+     /* Hide scrollbar for IE, Edge and Firefox */
+       ::-webkit-scrollbar{
+          -ms-overflow-style: none;  /* IE and Edge */
+          scrollbar-width: none;  /* Firefox */
+       }
+  
+    #animation{
+        padding: 10px;
+    }
+    #animation span{
+        position: relative;
+    }
+    #animation span::before{
+        content: "Developer";
+        animation: words 20s infinite;
+    }
+    #animation span::after{
+        content: "";
+        position: absolute;
+        width: calc(100% + 8px);
+        height: 100%;
+        right: -10px;
+        animation: .8s infinite, typing 20s steps(10) infinite;
+    }
+    @keyframes cursor {
+        to{
+            border-left: 2px solid white;
+        }
+    }
+    @keyframes words {
+        0%, 20%{
+            content: "Developer";
+            color: brown;
+        }
+        21%, 40%{
+            content: "Designer";
+            color: darkorange;
+        }
+        41%, 60%{
+            content: "Freelancer";
+            color: #000000;
+        }
+        61%, 80%{
+            content: "Coder";
+            color: deepskyblue;
+        }
+        81%, 100%{
+            content: "Programmer";
+            color: gold;
+        }
+    }
+    @keyframes typing {
+        10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95%{
+            width: 0;
+        }
+        5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85%{
+            width: calc(100% + 8px);
+        }
+    }
+    </style>
+</head>
+<body class=" overflow-y-scroll no-scrollbar">
+    <!-- navbar  -->
+    <div class="fixed  backdrop-blur-3xl top-0 z-30 right-0 left-0 mx-auto">
+        <!-- nav 01  -->
+        <div class="navbar w-full hidden lg:flex pt-3">
+            <div class="flex-1">
+              <a class="text-3xl  mx-4 font-extrabold">Rehena</a>
+            </div>
+            <div class="flex-none">
+              <ul class="menu menu-horizontal px-1">
+               
+                <label class="swap swap-rotate">
+  
+                    <!-- this hidden checkbox controls the state -->
+                    <input type="checkbox" class="theme-controller" value="synthwave" />
+                    
+                    <!-- sun icon -->
+                    <svg class="swap-on fill-current w-10 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z"/></svg>
+                    
+                    <!-- moon icon -->
+                    <svg class="swap-off fill-current w-10 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z"/></svg>
+                    
+                  </label>
+               </li>
+
+
+
+                <li><a href="#home" class=" hover:text-red-500 hover:animate-pulse mt-1">HOME</a></li>
+                <li><a href="#features" class=" hover:text-red-500 hover:animate-pulse mt-1">FEATURES</a></li>
+                <li><a href="#portfolio" class=" hover:text-red-500 hover:animate-pulse mt-1">PORTFOLIO</a></li>
+                <li><a href="#resume" class=" hover:text-red-500 hover:animate-pulse mt-1">RESUME</a></li>
+                <li><a href="#contact" class="btn  border-none shadow-lg text-red-500 hover:bg-black shadow-slate-800 mx-5 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-100 duration-300">CONTACT</a></li>
+              </ul>
+            </div>
+        </div>
+        <!-- nav 02 -->
+        <div class="navbar lg:hidden w-full pt-3 flex justify-between">
+            <div class="">
+                <a class="btn btn-ghost text-3xl  mx-2 font-bold">Rehena</a>
+            </div>
+            <div class="drawer navbar-end">
+                <input id="my-drawer" type="checkbox" class="drawer-toggle" />
+                <div class="drawer-content">
+                    <label for="my-drawer" class="btn border-none shadow-lg text-red-500 hover:bg-black  transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"><i class="fa-solid fa-bars"></i></label>
+                </div> 
+                <div class="drawer-side">
+                    <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
+                   
+                    <ul class="menu p-4 w-80 min-h-full bg-black">
+                        <label class="swap swap-rotate">
+  
+                            <!-- this hidden checkbox controls the state -->
+                            <input type="checkbox" class="theme-controller" value="synthwave" />
+                            
+                            <!-- sun icon -->
+                            <svg class="swap-on fill-current w-10 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z"/></svg>
+                            
+                            <!-- moon icon -->
+                            <svg class="swap-off fill-current w-10 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z"/></svg>
+                            
+                          </label>
+                        <li><a href="#home" class=" hover:text-red-500 hover:animate-pulse m-3">HOME</a></li>
+                        <li><a href="#features" class=" hover:text-red-500 hover:animate-pulse m-3">FEATURES</a></li>
+                        <li><a href="#portfolio" class=" hover:text-red-500 hover:animate-pulse m-3">PORTFOLIO</a></li>
+                        <li><a href="#resume" class=" hover:text-red-500 hover:animate-pulse m-3">RESUME</a></li>
+                        <li><a href="#contact" class="btn border-none shadow-lg hover:bg-black shadow-slate-800 mx-5 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 m-5">CONTACT</a></li>
+                          
+                        <ul class="flex absolute top-[480px]">
+                                <li><a href="" class="btn border-none shadow-xl  hover:bg-black  mx-5 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-100 duration-300 m-5"><i class="fa-brands fa-facebook"></i></a></li>
+                                <li><a href="" class="btn  border-none shadow-lg  hover:bg-black shadow-slate-800 mx-5 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-100 duration-300 m-5"><i class="fa-brands fa-github"></i></a></li>
+                                <li><a href="" class="btn  border-none shadow-lg hover:bg-black shadow-slate-800 mx-5 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-100 duration-300 m-5"><i class="fa-brands fa-linkedin"></i></a></li>
+                            </ul>
+                        <li>
+                        
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <main class="max-w-screen-xl w-full mx-auto lg:pt-20">
+        <!-- hero  -->
+        <div data-aos="fade-up" data-aos-duration="1000" class="grid md:grid-cols-2 mx-auto pt-28 p-10 gap-8" id="home">
+            <!-- text  -->
+            <div class="">
+                <div class="">
+                    <p class="tracking-widest font-extrabold">WELCOME TO MY WORLD</p>
+                    <div class="py-8">
+                        <p class="md:text-5xl text-3xl font-bold">Hey there!,  <span class=""> 
+                           </span></p>
+                           <p class="md:text-5xl text-3xl font-bold"> I am <span class="text-red-600">  Shidratul Muntaha  
+                        </span> </p>
+                        <p id="animation" class="md:text-5xl text-3xl font-bold">And I am a <span class="after:bg-white  px-2"></span></p>
+                    </div>
+                    <p class=" tracking-widest font-light">I use animation as a third dimension by which to simplify the experience and coding through each interaction. I'm not adding speed just to speed it up, but to make things fancy.</p>
+                </div>
+                <div class="mt-20" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="">
+                        <div class="">
+                            <p class=" tracking-widest font-light">Connect with me</p>
+                        </div>
+                        <ul class="flex gap-6 my-8">
+                            <li><a href="" class="btn  border-none shadow-lg text-red-500 hover:bg-black shadow-slate-800 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-100 duration-300"><i class="fa-brands fa-facebook text-xl"></i></a></li>
+                            <li><a href="" class="btn border-none shadow-lg text-red-500 hover:bg-black shadow-slate-800 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-100 duration-300"><i class="fa-brands fa-github text-xl"></i></a></li>
+                            <li><a href="" class="btn  border-none shadow-lg text-red-500 hover:bg-black shadow-slate-800 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-100 duration-300"><i class="fa-brands fa-linkedin text-xl"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class=""></div>
+            </div>
+            <!-- img  -->
+            <div class="">
+                <img src="" alt="">
+            </div>
+        </div>
+        <hr>
+        <!-- feature  -->
+
+
+
+
+
+
+
+
+    <section class="lg:py-[100px] md:py-[70px]" id="services">
+        <div class="container mx-auto justify-center">
+          <!-- Section title start -->
+           <div class="flex justify-between items-center gap-[20px] lg:gap-[30px] mb-[55px] md:flex-wrap md:text-center">
+                <div class="max-w-full lg:max-w-[580px]  w-full">
+                  <span class=" bg-[#ED5F38]text-accent1 text-[20px] lg:text-[24px] font-medium mb-[10px] lg:mb-[5px] justify-center">CREATIVE SERVICE</span>
+                  <h2 class="text:[28px] lg:text-[40px] font-bold font-heebo leading-[36x] lg:leading-[58px] text-center ">What can i do for service clients you</h2>
+                </div>
+                <div class="md:grow">
+                  <p class= text-[17px] leading-[28px] lg:max-w-[472px] w-ful>Promote your blog posts, case udie, and product ouncems
+                    with the the branded videoscustomers coming back for
+                    services Makes best effort.</p>
+                </div>
+           </div>
+          <!-- Section title end -->
+
+          <!-- Services list start -->
+          <div class="grid gap-[30px] lg:grid-cols-3 grid-cols-1 only-md:grid-cols-2">
+
+                <!-- Single service start -->
+                <div class="shadow-[0_0_50px_0_rgba(196,206,213,0.2)] hover:shadow-[0_0_150px_0_rgba(196,206,213,0.7)]  dark:shadow-[0_0_20px_0_rgba(0,0,0,0.1)] dark:hover:shadow-[0_0_50px_0_rgba(0,0,0,0.2)] hover:translate-y-[-10px] transition duration-500">
+                    <div class="overflow-hidden px-[30px] xl:px-[40px] lg:pt-[50px] md:pt-[40px] pb-[40px] ">
+                      <span class="bg-[#ED5F38] w-[70px] h-[70px] lg:w-[93px] lg:h-[93px] flex items-center justify-center rounded-full service-shape before:bg-[#79DAB9] before:opacity-[0.26]">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                      
+                      </span>
+                      <h3 class="text-primarytext-[20px] xl:text-[25px] font-bold font-heebo mt-[20px] mb-[15px]">Web Development</h3>
+                      <p class="text-[17px] ">Promote your blog posts, case udie, and product ouncems nts with the the branded videos.</p>
+                      <a href="#" class="link-button  before:bg-[#48CDA0] mt-[15px] hover:text-[#333] dark:hover:text-white">Read More</a>
+                    </div>
+                </div>
+                <!-- Single service end -->
+                
+                <!-- Single service start -->
+                <div class="shadow-[0_0_50px_0_rgba(196,206,213,0.2)] hover:shadow-[0_0_150px_0_rgba(196,206,213,0.7)]  dark:shadow-[0_0_20px_0_rgba(0,0,0,0.1)] dark:hover:shadow-[0_0_50px_0_rgba(0,0,0,0.2)] hover:translate-y-[-10px] transition duration-500">
+                    <div class="overflow-hidden px-[30px] xl:px-[40px] lg:pt-[50px] md:pt-[40px] pb-[40px] ">
+                      <span class="bg-[#ED5F38] w-[70px] h-[70px] lg:w-[93px] lg:h-[93px] flex items-center justify-center rounded-full service-shape before:bg-[#ED5F38] before:opacity-[0.16]">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-life-buoy"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="4"></circle><line x1="4.93" y1="4.93" x2="9.17" y2="9.17"></line><line x1="14.83" y1="14.83" x2="19.07" y2="19.07"></line><line x1="14.83" y1="9.17" x2="19.07" y2="4.93"></line><line x1="14.83" y1="9.17" x2="18.36" y2="5.64"></line><line x1="4.93" y1="19.07" x2="9.17" y2="14.83"></line></svg>
+                        
+                      </span>
+                      <h3 class="text-primary text-[20px] xl:text-[25px] font-bold font-heebo mt-[20px] mb-[15px]">Creative Design</h3>
+                      <p class="text-[17px]">Promote your blog posts, case udie, and product ouncems nts with the the branded videos.</p>
+                      <a href="#" class="link-button text-[#ED5F38] before:bg-[#ED5F38] mt-[15px] hover:text-[#333]">Read More</a>
+                    </div>
+                </div>
+                <!-- Single service end -->
+
+                <!-- Single service start -->
+                <div class="shadow-[0_0_50px_0_rgba(196,206,213,0.2)] hover:shadow-[0_0_150px_0_rgba(196,206,213,0.7)]  dark:shadow-[0_0_20px_0_rgba(0,0,0,0.1)] dark:hover:shadow-[0_0_50px_0_rgba(0,0,0,0.2)] hover:translate-y-[-10px] transition duration-500">
+                    <div class="overflow-hidden px-[30px] xl:px-[40px] lg:pt-[50px] md:pt-[40px] pb-[40px] ">
+                      <span class="bg-cyan-700  w-[70px] h-[70px] lg:w-[93px] lg:h-[93px] flex items-center justify-center rounded-full service-shape before:bg-[#007EFF] before:opacity-[0.16]">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-globe"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                      </span>
+                      <h3 class=" text-[20px] xl:text-[25px] font-bold font-heebo mt-[20px] mb-[15px]"> Responsiveness</h3>
+                      <p class="text-[17px] ">Promote your blog posts, case udie, and product ouncems nts with the the branded videos.</p>
+                      <a href="#" class="link-button  before:bg-[#007EFF] mt-[15px] hover:text-[#333] dark:hover:text-white">Read More</a>
+                    </div>
+                </div>
+                <!-- Single service end -->
+
+
+                <!-- Single service start -->
+                <div class="shadow-[0_0_50px_0_rgba(196,206,213,0.2)] hover:shadow-[0_0_150px_0_rgba(196,206,213,0.7)]  dark:shadow-[0_0_20px_0_rgba(0,0,0,0.1)] dark:hover:shadow-[0_0_50px_0_rgba(0,0,0,0.2)] hover:translate-y-[-10px] transition duration-500">
+                    <div class="overflow-hidden px-[30px] xl:px-[40px] lg:pt-[50px] md:pt-[40px] pb-[40px] ">
+                      <span class="bg-[#E6BC13] w-[70px] h-[70px] lg:w-[93px] lg:h-[93px] flex items-center justify-center rounded-full service-shape before:bg-[#E6BC13] before:opacity-[0.22]">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-headphones"><path d="M3 18v-6a9 9 0 0 1 18 0v6"></path><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path></svg>
+                      </span>
+                      <h3 class="text-primary text-[20px] xl:text-[25px] font-bold font-heebo mt-[20px] mb-[15px]">24/7 Support</h3>
+                      <p class="text-[17px] ">Promote your blog posts, case udie, and product ouncems nts with the the branded videos.</p>
+                      <a href="#" class="link-button text-[#E6BC13] before:bg-[#E6BC13] mt-[15px] hover:text-[#333] ">Read More</a>
+                    </div>
+                </div>
+                <!-- Single service end -->
+
+                
+
+                <!-- Single service start -->
+                <div class="shadow-[0_0_50px_0_rgba(196,206,213,0.2)] hover:shadow-[0_0_150px_0_rgba(196,206,213,0.7)]  dark:shadow-[0_0_20px_0_rgba(0,0,0,0.1)] dark:hover:shadow-[0_0_50px_0_rgba(0,0,0,0.2)] hover:translate-y-[-10px] transition duration-500">
+                    <div class="overflow-hidden px-[30px] xl:px-[40px] lg:pt-[50px] md:pt-[40px] pb-[40px] ">
+                      <span class="bg-[#ED5F38] w-[70px] h-[70px] lg:w-[93px] lg:h-[93px] flex items-center justify-center rounded-full service-shape before:bg-[#ED38D1] before:opacity-[0.16]">
+                        <svg width="40" height="40" stroke="currentColor" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M272 384c9.6-31.9 29.5-59.1 49.2-86.2l0 0c5.2-7.1 10.4-14.2 15.4-21.4c19.8-28.5 31.4-63 31.4-100.3C368 78.8 289.2 0 192 0S16 78.8 16 176c0 37.3 11.6 71.9 31.4 100.3c5 7.2 10.2 14.3 15.4 21.4l0 0c19.8 27.1 39.7 54.4 49.2 86.2H272zM192 512c44.2 0 80-35.8 80-80V416H112v16c0 44.2 35.8 80 80 80zM112 176c0 8.8-7.2 16-16 16s-16-7.2-16-16c0-61.9 50.1-112 112-112c8.8 0 16 7.2 16 16s-7.2 16-16 16c-44.2 0-80 35.8-80 80z"/></svg>
+                      </span>
+                      <h3 class="text-[20px] xl:text-[25px] font-bold font-heebo mt-[20px] mb-[15px]">Awesome Idea</h3>
+                      <p class="text-[17px] ">Promote your blog posts, case udie, and product ouncems nts with the the branded videos.</p>
+                      <a href="#" class="link-button before:bg-[#ED38D1] mt-[15px] hover:text-[#333]">Read More</a>
+                    </div>
+                </div>
+                <!-- Single service end -->
+
+                
+                  <!-- Single service start -->
+                  <div class="shadow-[0_0_50px_0_rgba(196,206,213,0.2)] hover:shadow-[0_0_150px_0_rgba(196,206,213,0.7)]  dark:shadow-[0_0_20px_0_rgba(0,0,0,0.1)] dark:hover:shadow-[0_0_50px_0_rgba(0,0,0,0.2)] hover:translate-y-[-10px] transition duration-500">
+                    <div class="overflow-hidden px-[30px] xl:px-[40px] lg:pt-[50px] md:pt-[40px] pb-[40px] ">
+                      <span class="bg-red-700 w-[70px] h-[70px] lg:w-[93px] lg:h-[93px] flex items-center justify-center rounded-full service-shape before:bg-[#A348CD] before:opacity-[0.16]">
+                        <svg width="40" height="40" stroke="currentColor" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M135.2 117.4L109.1 192H402.9l-26.1-74.6C372.3 104.6 360.2 96 346.6 96H165.4c-13.6 0-25.7 8.6-30.2 21.4zM39.6 196.8L74.8 96.3C88.3 57.8 124.6 32 165.4 32H346.6c40.8 0 77.1 25.8 90.6 64.3l35.2 100.5c23.2 9.6 39.6 32.5 39.6 59.2V400v48c0 17.7-14.3 32-32 32H448c-17.7 0-32-14.3-32-32V400H96v48c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32V400 256c0-26.7 16.4-49.6 39.6-59.2zM128 288c0-17.7-14.3-32-32-32s-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32zm288 32c17.7 0 32-14.3 32-32s-14.3-32-32-32s-32 14.3-32 32s14.3 32 32 32z"/></svg>
+                      </span>
+                      <h3 class="text-cyan-700 text-[20px] xl:text-[25px] font-bold font-heebo mt-[20px] mb-[15px]">Development Design</h3>
+                      <p class="text-[17px] ">Promote your blog posts, case udie, and product ouncems nts with the the branded videos.</p>
+                      <a href="#" class="link-button  before:bg-[#A348CD] mt-[15px] hover:text-[#333]">Read More</a>
+                    </div>
+                </div>
+                <!-- Single service end -->
+
+          </div>
+          <!-- Services list end -->
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+   <!-- Portfolio -->
+   <section id="portfolio" class="section-Portfolio 2xl:py-[80px] py-[70px]">
+    <div class="banner text-center mb-[30px]" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300">
+        <span class="text-[14px] text-[#ee4343]">PORTFOLIO</span>
+        <h2
+            class="text-center mt-[5px] text-white 2xl:text-[35px] xl:text-[33px] lg:text-[30px] md:text-[26px] sm:text-[24px] text-[22px] font-bold">
+            My <span class="text-[#7963e0]"> PORTFOLIO</span></h2>
+    </div>
+    <div
+        class="flex flex-wrap justify-between items-center mx-auto 2xl:max-w-[1320px] xl:max-w-[1140px] lg:max-w-[960px] md:max-w-[720px] sm:max-w-[540px] max-[320px]:px-[12px] px-6">
+        <div class="m-b-minus-24px w-full">
+            <div class="portfolio-content" id="MixItUpDA2FB7" data-aos="fade-up" data-aos-duration="2000"
+                data-aos-delay="600">
+                <div class="portfolio-tabs mb-[30px]">
+                    <ul
+                        class="2xl:flex xl:flex md:flex sm:block place-content-center text-center">
+                        <li class="text-[14px]  2xl:mx-[10px] sm:mx-[0px] px-[10px] leading-[11px] font-semibold hover:text-[#7963e0] cursor-pointer inline-block active"
+                            data-filter="all">
+                            ALL</li>
+                        <li class="text-[14px] 2xl:mx-[10px] sm:mx-[0px] px-[10px] leading-[11px] font-semibold hover:text-[#7963e0] cursor-pointer inline-block"
+                            data-filter=".design">DESIGN</li>
+                        <li class="text-[14px] 2xl:mx-[10px] sm:mx-[0px] px-[10px] leading-[11px] font-semibold hover:text-[#7963e0] cursor-pointer inline-block"
+                            data-filter=".development">DEVELOPMENT</li>
+                        <li class="text-[14px] text-[#3939b2] 2xl:mx-[10px] sm:mx-[0px] px-[10px] leading-[11px] font-semibold hover:text-[#7963e0] cursor-pointer inline-block"
+                            data-filter=".graphics"></li>
+                        <li class="text-[14px] text-[#ddd] 2xl:mx-[10px] sm:mx-[0px] px-[10px] leading-[11px] font-semibold hover:text-[#7963e0] cursor-pointer inline-block"
+                            data-filter=".templates">Templates</li>
+                    </ul>
+                </div>
+                <div class="portfolio-content-items">
+                    <div class="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-[30px]">
+                        <div class="mix graphics templates">
+                            <div class="portfolio-img truncate rounded-2xl relative">
+                                <img src="img/house.png" alt="graphics"
+                                    class="w-full transform hover:bg-blue-600 transition duration-500 hover:-rotate-12 hover:scale-125">
+                                <h3 class="top-contain absolute top-[15px] right-[15px]">
+                                    <span
+                                        class="bg-black rounded-full text-white font-normal text-[12px] px-2 py-1">Responsive
+                            </span>
+                                    <span
+                                        class="bg-black rounded-full text-white font-normal text-[12px] px-2 py-1">Templates</span>
+                                </h3>
+                                <div class="bottom-contain absolute bottom-4 left-4 right-4">
+                                    <div
+                                        class="overlay-info px-4 py-2 bg-black bg-opacity-60 rounded-xl grid grid-cols-2 gap-[30px] place-content-between">
+                                        <a href="https://dre-house.netlify.app" class="text-white text-sm flex items-center">House
+                                            Service</a>
+                                        <a href="https://dre-house.netlify.app" data-fancybox="gallery"
+                                            class="text-white text-sm grid justify-items-end">
+                                            <p class="hidden">.</p>
+                                            <span
+                                                class="bg-[#7963e0] h-8 w-8 flex justify-center items-center rounded-md">
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mix design">
+                            <div class="portfolio-img truncate rounded-2xl relative">
+                                <img src="img/travallll.png" alt="design"
+                                    class="w-full transform hover:bg-blue-600 transition duration-500 hover:-rotate-12 hover:scale-125">
+                                <h3 class="top-contain absolute top-[15px] right-[15px]">
+                                    <span
+                                        class="bg-black rounded-full font-normal text-white text-[12px] px-2 py-1">Web
+                                        Design</span>
+                                </h3>
+                                <div class="bottom-contain absolute bottom-4 left-4 right-4">
+                                    <div
+                                        class="overlay-info px-4 py-2 bg-black bg-opacity-60 rounded-xl grid grid-cols-2 gap-[30px] place-content-between">
+                                        <a href="#" class="text-white text-sm flex items-center">Travel agancy
+                                            </a>
+                                        <a href="https://shidratul-muntaha.netlify.app" data-fancybox="gallery"
+                                            class="text-white text-sm grid justify-items-end">
+                                            <p class="hidden">.</p>
+                                            <span
+                                                class=" h-8 w-8 flex justify-center items-center rounded-md">
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mix design">
+                            <div class="portfolio-img truncate rounded-2xl relative">
+                                <img src="img/bre.png" alt="design"
+                                    class="w-full transform hover:bg-blue-600 transition duration-500 hover:-rotate-12 hover:scale-125">
+                                <h3 class="top-contain absolute top-[15px] right-[15px]">
+                                    <span
+                                        class="bg-black rounded-full font-normal text-white text-[12px] px-2 py-1">Web
+                                        Design</span>
+                                </h3>
+                                <div class="bottom-contain absolute bottom-4 left-4 right-4">
+                                    <div
+                                        class="overlay-info px-4 py-2 bg-black bg-opacity-60 rounded-xl grid grid-cols-2 gap-[30px] place-content-between">
+                                        <a href="#" class="text-white text-sm flex items-center">eCommerce website</a>
+                                    </a>
+                                        <a href="https://astonishing-starlight-7a81c4.netlify.app" data-fancybox="gallery"
+                                            class="text-white text-sm grid justify-items-end">
+                                            <p class="hidden">.</p>
+                                            <span
+                                                class="bg-[#7963e0] h-8 w-8 flex justify-center items-center rounded-md">
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mix development">
+                            <div class="portfolio-img truncate rounded-2xl relative">
+                                <img src="img/Screenshot (30).png" alt="development"
+                                    class="w-full transform hover:bg-blue-600 transition duration-500 hover:-rotate-12 hover:scale-125">
+                                <h3 class="top-contain absolute top-[15px] right-[15px]">
+                                    <span
+                                        class="bg-black rounded-full font-normal text-white text-[12px] px-2 py-1">Template</span>
+                                </h3>
+                                <div class="bottom-contain absolute bottom-4 left-4 right-4">
+                                    <div
+                                        class="overlay-info px-4 py-2 bg-black bg-opacity-60 rounded-xl grid grid-cols-2 gap-[30px] place-content-between">
+                                        <a href="#" class="text-white text-sm flex items-center">portfolio-
+                                            Website</a>
+                                        <a href="https://gilded-cendol-703754.netlify.app" data-fancybox="gallery"
+                                            class="text-white text-sm grid justify-items-end">
+                                            <p class="hidden">.</p>
+                                            <span
+                                                class="bg-[#7963e0] h-8 w-8 flex justify-center items-center rounded-md">
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mix templates design">
+                            <div class="portfolio-img truncate rounded-2xl relative">
+                                <img src="img/jazzy-watch-8467b2.netlify.app_ (2).png" alt="templates"
+                                    class="w-full transform hover:bg-blue-600 transition duration-500 hover:-rotate-12 hover:scale-125">
+                                <h3 class="top-contain absolute top-[15px] right-[15px]">
+                                    <span
+                                        class="bg-black rounded-full font-normal text-white text-[12px] px-2 py-1">Templates</span>
+                                    <span
+                                        class="bg-black rounded-full font-normal text-white text-[12px] px-2 py-1">Web
+                                        Design</span>
+                                </h3>
+                                <div class="bottom-contain absolute bottom-4 left-4 right-4">
+                                    <div
+                                        class="overlay-info px-4 py-2 bg-black bg-opacity-60 rounded-xl grid grid-cols-2 gap-[30px] place-content-between">
+                                        <a href="https://jazzy-watch-8467b2.netlify.app" class="text-white text-sm flex items-center">
+                                            eCommerce template</a>
+                                        <a href="https://jazzy-watch-8467b2.netlify.app" data-fancybox="gallery"
+                                            class="text-white text-sm grid justify-items-end">
+                                            <p class="hidden">.</p>
+                                            <span
+                                                class="bg-[#7963e0] h-8 w-8 flex justify-center items-center rounded-md">
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mix development graphics">
+                            <div class="portfolio-img truncate rounded-2xl relative">
+                                <img src="img/rehena-clock.netlify.app_.png" alt="development"
+                                    class="w-full transform hover:bg-blue-600 transition duration-500 hover:-rotate-12 hover:scale-125">
+                                <h3 class="top-contain absolute top-[15px] right-[15px]">
+                                    <span
+                                        class="bg-black rounded-full font-normal text-white text-[12px] px-2 py-1">Development</span>
+                                    <span
+                                        class="bg-black rounded-full font-normal text-white text-[12px] px-2 py-1">3D
+                                        Graphics</span>
+                                </h3>
+                                <div class="bottom-contain absolute bottom-4 left-4 right-4">
+                                    <div
+                                        class="overlay-info px-4 py-2 bg-black bg-opacity-60 rounded-xl grid grid-cols-2 gap-[30px] place-content-between">
+                                        <a href="#" class="text-white text-sm flex items-center">JavaScript
+                                            clock</a>
+                                        <a href="https://rehena-clock.netlify.app" data-fancybox="gallery"
+                                            class="text-white text-sm grid justify-items-end">
+                                            <p class="hidden">.</p>
+                                            <span
+                                                class="bg-[#7963e0] h-8 w-8 flex justify-center items-center rounded-md">
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+        
+        <!-- <div class="container p-10 pt-10 pb-10" id="features">
+            <div data-aos="fade-down" data-aos-duration="1000" class="container mb-10">
+                <p class="text-red-500 tracking-widest font-light py-4">FEATURES</p>
+                <p class="font-bold text-5xl text-white">What Do I</p>
+            </div>
+            <div class="container grid md:grid-cols-3 gap-y-4 md:gap-x-4 p-3">
+                <a href="#contact" class="" data-aos="flip-left" data-aos-duration="1000">
+                    <div class="p-5 group shadow-sm shadow-slate-700  bg-slate-800 transition-colors duration-300 delay-100 ease-in-out hover:bg-slate-950 text-white">
+                        <p class="text-2xl font-semibold p-5">Web Design</p>
+                        <p class="p-5">A large company needs perfectly designed website for expressing themselves. And I can help you with that. My goal is to listen and understand the goals of my customers.</p>
+                        <span class="bg-transparent text-red-500 text-xl border-none hover:bg-transparent group-hover:scale-150"><i class="fa-solid fa-arrow-right-long"></i></span>
+                    </div>
+                </a>
+                <a href="#contact" class="" data-aos="flip-left" data-aos-duration="1000">
+                    <div class="p-5 group shadow-sm shadow-slate-700  bg-slate-800 transition-colors duration-300 delay-100 ease-in-out hover:bg-slate-950 text-white">
+                        <p class="text-2xl font-semibold p-5">Web Application</p>
+                        <p class="p-5">A large company needs perfectly designed website for expressing themselves. And I can help you with that. My goal is to listen and understand the goals of my customers.</p>
+                        <span class="bg-transparent text-red-500 text-xl border-none hover:bg-transparent group-hover:scale-150"><i class="fa-solid fa-arrow-right-long"></i></span>
+                    </div>
+                </a>
+                <a href="#contact" class="" data-aos="flip-left" data-aos-duration="1000">
+                    <div class="p-5 group shadow-sm shadow-slate-700  bg-slate-800 transition-colors duration-300 delay-100 ease-in-out hover:bg-slate-950 text-white">
+                        <p class="text-2xl font-semibold p-5">Responsive Design</p>
+                        <p class="p-5">A large company needs perfectly designed website for expressing themselves. And I can help you with that. My goal is to listen and understand the goals of my customers.</p>
+                        <span class="bg-transparent text-red-500 text-xl border-none hover:bg-transparent group-hover:scale-150"><i class="fa-solid fa-arrow-right-long"></i></span>
+                    </div>
+                </a>
+            </div>
+        </div> -->
+        <hr>
+        
+        <hr>
+        <!-- resume  -->
+        <div class="container pb-20 p-10" id="resume">
+            <div data-aos="fade-down" data-aos-duration="1000" class="container mb-10 text-center">
+                <h1 class="text-red-500  tracking-widest font-bold py-4">SKILLS AND QUALIFICATION</h1>
+                <p class="font-bold text-5xl">My Resume</p>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="1000" class="mb-4 border-b border-gray-200 dark:border-gray-700">
+                <div class="mb-4 border-b border-gray-200 dark:border-gray-700">
+                    <ul class="text-sm font-medium text-center text-gray-500 rounded-lg shadow sm:flex dark:divide-gray-700 dark:text-gray-400" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist" data-tabs-active-classes="text-red-600 hover:text-red-600 dark:text-red-500 dark:hover:text-red-500 border-red-600 dark:border-red-500" data-tabs-inactive-classes="dark:border-transparent text-gray-500 hover:text-gray-600 dark:text-gray-400 border-gray-100 hover:border-gray-300 dark:border-gray-700 dark:hover:text-gray-300">
+                        <li class="w-full focus-within:z-10" role="presentation">
+                            <button class="inline-block p-4 border-b-2 rounded-t-lg" id="profile-tab" data-tabs-target="#profile" type="button" role="tab" aria-controls="profile">Education</button>
+                        </li>
+                        <li class="w-full focus-within:z-10" role="presentation">
+                            <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard">Skills</button>
+                        </li>
+                        <li class="w-full focus-within:z-10" role="presentation">
+                            <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="settings-tab" data-tabs-target="#settings" type="button" role="tab" aria-controls="settings">Experience</button>
+                        </li>
+                        <li class="w-full focus-within:z-10" role="presentation">
+                            <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="contacts-tab" data-tabs-target="#contacts" type="button" role="tab" aria-controls="contacts">Works</button>
+                        </li>
+                    </ul>
+                </div>
+                <div id="default-tab-content">
+                    <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class="grid md:grid-cols-2 gap-4 p-10">
+                            <ul class="timeline timeline-snap-icon timeline-vertical timeline-compact">
+                                <li>
+                                    <div class="timeline-middle">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5 text-red-500"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" /></svg>
+                                    </div>
+                                    <div class="timeline-start md:text-end mb-10 bg-slate-800 transition-colors duration-300 delay-50 ease-in-out hover:bg-slate-950 text-slate-400 hover:text-white p-6 shadow-md shadow-slate-950">
+                                        <time class="font-mono italic text-red-500">2023-2024</time>
+                                        <div class="text-lg font-black">Her Power Course</div>
+                                        <p class="">A Govt. Web Development Course.</p>
+                                    </div>
+                                    <hr/>
+                                </li>
+                                <li>
+                                    <hr />
+                                    <div class="timeline-middle">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5 text-red-500"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" /></svg>
+                                    </div>
+                                    <div class="timeline-start md:text-end mb-10 bg-slate-800 transition-colors duration-300 delay-50 ease-in-out hover:bg-slate-950 text-slate-400 hover:text-white p-6 shadow-md shadow-slate-950">
+                                        <time class="font-mono italic text-red-500">Present</time>
+                                        <div class="text-lg font-black">BSc</div>
+                                        <p class="">BSc first year admitted into Brindaban Govt. Collage.</p>
+                                    </div>
+                                    <hr />
+                                </li>
+                            </ul>
+                            <ul class="timeline timeline-snap-icon timeline-vertical timeline-compact">
+                                <li>
+                                    <hr />
+                                    <div class="timeline-middle">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5 text-red-500"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" /></svg>
+                                    </div>
+                                    <div class="timeline-start md:text-end mb-10 bg-slate-800 transition-colors duration-300 delay-50 ease-in-out hover:bg-slate-950 text-slate-400 hover:text-white p-6 shadow-md shadow-slate-950">
+                                        <time class="font-mono italic text-red-500">2021-2022</time>
+                                        <div class="text-lg font-black">HSC</div>
+                                        <p class="">Central Creative Collage.</p>
+                                    </div>
+                                    <hr />
+                                </li>
+                                <li>
+                                    <hr />
+                                    <div class="timeline-middle">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="text-red-500 h-5 w-5"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" /></svg>
+                                    </div>
+                                    <div class="timeline-start md:text-end mb-10 bg-slate-800 transition-colors duration-300 delay-50 ease-in-out hover:bg-slate-950 text-slate-400 hover:text-white p-6 shadow-md shadow-slate-950">
+                                        <time class="font-mono italic text-red-500">2019-2020</time>
+                                        <div class="text-lg font-black">SSC</div>
+                                        <p class="">Poil High School.</p>
+                                    </div>
+                                    <hr />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
+                        <div class="container p-10 mt-10 mb-10" id="skills">
+                            <div class="container grid md:grid-cols-4 sm:grid-cols-2 gap-4 justify-items-center">
+                                <div data-aos="fade-up" data-aos-duration="1000" class="p-5 rounded-3xl">
+                                    <img src="icon/html5.png" alt="">
+                                </div>
+                                <div data-aos="fade-up" data-aos-duration="1000" class=" p-5 rounded-3xl">
+                                    <img src="icon/png-clipart-css3-cascading-style-sheets-logo-html-world-wide-web-blue-angle-thumbnail.png" alt="">
+                                </div>
+                                <div data-aos="fade-up" data-aos-duration="1000" class=" p-5 rounded-3xl">
+                                    <img src="icon/bootstrap-5-logo-icon.webp" alt="">
+                                </div>
+                                <div data-aos="fade-up" data-aos-duration="1000" class=" p-5 rounded-3xl">
+                                    <img src="icon/js.png" alt="">
+                                </div>
+
+                                <div data-aos="fade-up" data-aos-duration="1000" class="p-5 rounded-3xl">
+                                    <img src="icon/tailwind.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="settings" role="tabpanel" aria-labelledby="settings-tab">
+                        <p class="text-5xl text-center text-gray-500 dark:text-gray-400">Experience of one year.</p>
+                    </div>
+                    <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="contacts" role="tabpanel" aria-labelledby="contacts-tab">
+                        <p class="text-5xl text-center text-gray-500 dark:text-gray-400">No work experience yet.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <hr>
+        <!-- contact  -->
+        <div class="container md:p-10 pt-10 pb-10" id="contact">
+            <div data-aos="fade-down" data-aos-duration="1000" class="container mb-10 text-center">
+                <p class="text-red-500 tracking-widest font-extrabold py-4">CONTACT</p>
+                <p class="font-bold text-5xl text-white">Contact With Me</p>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="1000" class="grid md:grid-cols-3 gap-4 p-5">
+                <form class="md:p-6 p-3 col-span-2 shadow-xl  bg-slate-950/50" id="form">
+                    <div class="p-3">
+                        <input id="name" type="text" placeholder="Your name" class="p-2 w-full border-2 border-sky-500 text-red-500">
+                    </div>
+                    <div class="p-3">
+                        <input id="email" type="email" placeholder="Your E-mail" class="p-2 w-full border-2 border-sky-500 text-red-500">
+                    </div>
+                    <div class="p-3">
+                        <input id="subject" type="text" placeholder="Subject" class="p-2 w-full border-2 border-sky-500 text-sky-500">
+                    </div>
+                    <div class="p-3">
+                        <textarea id="message" cols="30" rows="5" placeholder="Your Message" class="p-2 w-full border-2 border-red-50 text-sky-800"></textarea>
+                    </div>
+                    <div class="p-3">
+                        <button id="submit-btn" class="btn btn-block border-none shadow-lg text-red-500 hover:bg-black shadow-slate-800 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-100 duration-300">Submit</button>
+                    </div>
+                </form>
+                <div class="container p-4 md:p-6 shadow-xl shadow-slate-950 bg-slate-950/50">
+                    <div class="my-10">
+                        <p class="text-3xl font-bold text-white my-6">Rehena</p>
+                        <p class="text-slate-200 tracking-widest my-3 font-light">Web Developer</p>
+                        <p class="text-slate-200 my-4">I am available for website design. Connect with me via and call in to my account.</p>
+                        
+                        <p class="text-slate-200 my-2">Email:shidratulmuntaharehena@gmail.com</p>
+                    </div>
+                    <div class="">
+                        <div class="">
+                            <p class="text-slate-200 tracking-widest font-light">FIND ME</p>
+                        </div>
+                        <ul class="flex gap-6 my-8">
+                            <li><a href="https://www.facebook.com/rownakraw.worthy?mibextid=ZbWKwL" class="btn bg-slate-950 border-none shadow-lg text-red-500 hover:bg-black shadow-slate-800 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-100 duration-300"><i class="fa-brands fa-facebook text-xl"></i></a></li>
+                            <li><a href="https://github.com/worthy1819" class="btn bg-slate-950 border-none shadow-lg text-red-500 hover:bg-black shadow-slate-800 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-100 duration-300"><i class="fa-brands fa-github text-xl"></i></a></li>
+                            <li><a href="https://www.fiverr.com/rownakworthy?up_rollout=true" class="btn bg-slate-950 border-none shadow-lg text-red-500 hover:bg-black shadow-slate-800 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-100 duration-300"><i class="fa-brands fa-linkedin text-xl"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <hr>
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- footer  -->
+        <footer class="footer footer-center p-10">
+            <ul class="grid grid-flow-col gap-4">
+                <li><a href="#home" class="text-slate-400 hover:text-red-500 hover:animate-pulse mt-1">HOME</a></li>
+                <li><a href="#features" class="text-slate-400 hover:text-red-500 hover:animate-pulse mt-1">FEATURES</a></li>
+                <li><a href="#portfolio" class="text-slate-400 hover:text-red-500 hover:animate-pulse mt-1">PORTFOLIO</a></li>
+                <li><a href="#resume" class="text-slate-400 hover:text-red-500 hover:animate-pulse mt-1">RESUME</a></li>
+            </ul>
+            <nav>
+                <ul class="flex gap-6 my-8">
+                    <li><a href="" class="btn bg-slate-950 border-none shadow-lg text-red-500 hover:bg-black shadow-slate-800 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-100 duration-300"><i class="fa-brands fa-facebook text-xl"></i></a></li>
+                    <li><a href="" class="btn bg-slate-950 border-none shadow-lg text-red-500 hover:bg-black shadow-slate-800 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-100 duration-300"><i class="fa-brands fa-github text-xl"></i></a></li>
+                    <li><a href="" class="btn bg-slate-950 border-none shadow-lg text-red-500 hover:bg-black shadow-slate-800 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-100 duration-300"><i class="fa-brands fa-linkedin text-xl"></i></a></li>
+                </ul>
+            </nav> 
+            <aside>
+              <p>Copyright © 2024 - All right reserved by Industries Ltd</p>
+            </aside>
+        </footer>
+    <script src="app.js"></script>
+    <script>
+         AOS.init();
+    </script>
+</body>
+</html>
